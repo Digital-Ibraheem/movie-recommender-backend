@@ -67,6 +67,7 @@ def recommend():
     similar_user_recs = similar_user_recs[similar_user_recs > 0.1]
     
     # Find ratings by all users for the recommended movies
+    # This is done to ensure the movies we are recommending aren't just popular movies, rather movies specifically only rated highly by people similar to us. This gives more accurate recommendations
     all_users = ratings[(ratings['movieId'].isin(similar_user_recs.index)) & (ratings['rating'] > 4)]
     all_users_recs = all_users['movieId'].value_counts() / len(all_users['userId'].unique())
     
