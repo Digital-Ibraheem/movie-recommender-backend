@@ -1,5 +1,8 @@
 # ML Movie Recommendation App
 
+(Yes the design is ugly, at least it works :))
+https://creative-madeleine-a22059.netlify.app/
+
 Welcome to the **ML Movie Recommendation App**! This project provides personalized movie recommendations using a **collaborative filtering recommendation system**. It’s an efficient and interactive way to explore new movies based on your preferences and those of like-minded users.
 
 ---
