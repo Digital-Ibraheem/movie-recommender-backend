@@ -82,9 +82,11 @@ def recommend():
     
     return recommendations.to_json(orient="records")
 
-@app.route('/health')
-def health_check():
-    return jsonify({"status": "healthy"}), 200
+@app.route('/ping')
+def ping():
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[SERVER PING] Server pinged at: {current_time}")
+    return jsonify({"status": "alive", "time": current_time}), 200
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
