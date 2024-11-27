@@ -59,8 +59,8 @@ Welcome to the **ML Movie Recommendation App**! This project provides personaliz
 
 ### Clone the Repository  
 ```bash
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/digital-ibraheem/movie-recommender-backend.git
+cd movie-recommender-backend
 ```
 ## 🔧 Challenges Faced
 ### Large Dataset
